@@ -1,1 +1,99 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="OSDC Mystery Room, a fictional repository investigation."><title>OSDC Mystery Room — The Missing Commit</title><link rel="stylesheet" href="css/style.css"></head><body><header class="site-header"><nav class="container nav-wrap" aria-label="Main navigation"><a class="brand" href="index.html">OSDC // MYSTERY ROOM</a><div class="site-nav"><a aria-current="page" href="case.html">CASE FILE</a><a href="suspects.html">SUSPECTS</a><a href="repository.html">REPOSITORY</a><a href="evidence.html">EVIDENCE</a><a href="terminal.html">TERMINAL</a><a href="clues.html">CLUES</a><a href="investigation.html">FINAL REPORT</a></div></nav></header><main><section class="container hero"><div class="hero-grid"><div><p class="eyebrow">CASE #001</p><h1 class="hero-title"><span>OSDC // MYSTERY ROOM</span>THE <strong>MISSING</strong> COMMIT</h1><p class="lead hero-copy">An unknown commit appeared in the OSDC repository at <time datetime="02:13">02:13 AM</time>.</p><p class="lead">Three files disappeared. Four developers had access. One of them knows more than they are saying.</p><a class="button" href="case.html">BEGIN INVESTIGATION <span aria-hidden="true">→</span></a></div><aside class="card status-panel" aria-label="Case status"><p class="section-title">LIVE CASE STATUS</p><div class="status"><span>CASE STATUS</span><span>ACTIVE</span></div><div class="status"><span>THREAT LEVEL</span><span class="unknown">UNKNOWN</span></div><div class="status"><span>REPOSITORY</span><span>OSDC/PROJECT-X</span></div><div class="status"><span>INCIDENT TIME</span><span>02:13 AM</span></div></aside></div><p class="landing-note">OPEN SOURCE DEVELOPERS CLUB // RECONSTRUCTED INVESTIGATION ENVIRONMENT</p></section></main><footer class="site-footer"><div class="container footer-inner"><span>OSDC Mystery Room</span><span>Case #001</span><span>A fictional investigation experience</span></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="OSDC Mystery Room — a fictional investigation into the Missing Commit.">
+  <title>OSDC Mystery Room — The Missing Commit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="#top">OSDC // MYSTERY ROOM</a>
+      <div class="site-nav">
+        <a href="#case">CASE FILE</a><a href="#suspects">SUSPECTS</a><a href="#repository">REPOSITORY</a><a href="#evidence">EVIDENCE</a><a href="#terminal">TERMINAL</a><a href="#clues">CLUES</a><a href="#investigation">INVESTIGATION</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">CASE #001</p>
+        <h1 id="hero-title"><span>OSDC // MYSTERY ROOM</span>THE <strong>MISSING</strong> COMMIT</h1>
+        <p class="lead">At <time datetime="02:13">02:13 AM</time>, an unknown commit appeared in the OSDC repository.</p>
+        <p class="hero-detail">Three files disappeared.<br>Four developers had access.<br>Someone knows more than they are saying.</p>
+        <a class="button" href="#case">BEGIN INVESTIGATION <span aria-hidden="true">→</span></a>
+      </div>
+      <aside class="card status-panel" aria-label="Live case status">
+        <p class="section-kicker">LIVE CASE STATUS</p>
+        <div class="status"><span>CASE STATUS</span><strong>ACTIVE</strong></div>
+        <div class="status"><span>REPOSITORY</span><strong>OSDC/PROJECT-X</strong></div>
+        <div class="status"><span>INCIDENT TIME</span><strong>02:13 AM</strong></div>
+      </aside>
+    </section>
+
+    <section id="case" class="section container" aria-labelledby="case-title">
+      <header class="section-header"><p class="eyebrow">INCIDENT REPORT / OSDC-001</p><h2 id="case-title">CASE FILE // OSDC-001</h2><p>At approximately 02:13 AM, an unauthorized commit was detected in <strong>OSDC/Project-X</strong>. Three files were removed before repository access was suspended.</p></header>
+      <div class="case-grid">
+        <article class="card report-card"><h3>Incident summary</h3><div class="table-wrap"><table><thead><tr><th>Field</th><th>Details</th></tr></thead><tbody><tr><td>Case ID</td><td><code>OSDC-001</code></td></tr><tr><td>Repository</td><td>OSDC/PROJECT-X</td></tr><tr><td>Incident</td><td>Unauthorized commit</td></tr><tr><td>Time</td><td><time datetime="02:13">02:13 AM</time></td></tr><tr><td>Files Deleted</td><td>3</td></tr><tr><td>Status</td><td><span class="badge verified">INVESTIGATION ACTIVE</span></td></tr></tbody></table></div></article>
+        <article class="card report-card"><h3>Activity timeline</h3><ol class="timeline"><li><time datetime="01:42">01:42 AM</time>Alex logs into repository</li><li><time datetime="01:58">01:58 AM</time>Riya pushes a commit</li><li><time datetime="02:07">02:07 AM</time>Kabir accesses deployment server</li><li><time class="alert" datetime="02:13">02:13 AM</time><strong class="alert">UNKNOWN COMMIT DETECTED</strong></li><li><time datetime="02:15">02:15 AM</time>Three files deleted</li><li><time datetime="02:17">02:17 AM</time>Repository locked</li></ol></article>
+      </div>
+    </section>
+
+    <section id="suspects" class="section container" aria-labelledby="suspects-title">
+      <header class="section-header"><p class="eyebrow">ACCESS REVIEW / FOUR CONTRIBUTORS</p><h2 id="suspects-title">SUSPECT DATABASE</h2><p>Recorded access and statements are presented neutrally. <em>The evidence is yours to interpret.</em></p></header>
+      <div class="suspect-grid">
+        <article class="card suspect-card"><figure class="avatar avatar-alex"><span aria-hidden="true">AS</span><figcaption>Suspect 01</figcaption></figure><h3>Alex Sharma</h3><p class="role">Frontend Developer</p><span class="badge read">READ ACCESS</span><p class="meta">LAST ACTIVITY <time datetime="01:42">01:42 AM</time></p><blockquote>“I stopped working on the project around midnight.”</blockquote><details><summary>View statement</summary><p>Alex reports checking documentation and repository updates before leaving the project workspace.</p></details></article>
+        <article class="card suspect-card"><figure class="avatar avatar-riya"><span aria-hidden="true">RM</span><figcaption>Suspect 02</figcaption></figure><h3>Riya Mehta</h3><p class="role">Backend Developer</p><span class="badge write">WRITE ACCESS</span><p class="meta">LAST ACTIVITY <time datetime="01:58">01:58 AM</time></p><blockquote>“I was working on the API until around 2 AM.”</blockquote><details><summary>View statement</summary><p>Riya confirms a routine API fix was pushed and says no cleanup action was intended.</p></details></article>
+        <article class="card suspect-card"><figure class="avatar avatar-kabir"><span aria-hidden="true">KV</span><figcaption>Suspect 03</figcaption></figure><h3>Kabir Verma</h3><p class="role">DevOps Lead</p><span class="badge admin">ADMIN ACCESS</span><p class="meta">LAST ACTIVITY <time datetime="02:07">02:07 AM</time></p><blockquote>“I was fixing the deployment pipeline.”</blockquote><details><summary>View statement</summary><p>Kabir states the deployment server was accessed for maintenance shortly before the incident.</p></details></article>
+        <article class="card suspect-card"><figure class="avatar avatar-sam"><span aria-hidden="true">SK</span><figcaption>Suspect 04</figcaption></figure><h3>Sam Kapoor</h3><p class="role">Open Source Contributor</p><span class="badge write">WRITE ACCESS</span><p class="meta">LAST ACTIVITY <time datetime="01:31">01:31 AM</time></p><blockquote>“I didn’t touch the repository that night.”</blockquote><details><summary>View statement</summary><p>Sam’s access record shows an earlier session; no later event is attributed by name.</p></details></article>
+      </div>
+    </section>
+
+    <section id="repository" class="section container" aria-labelledby="repository-title">
+      <header class="section-header"><p class="eyebrow">LOCKED SNAPSHOT / REPOSITORY REVIEW</p><h2 id="repository-title">REPOSITORY // PROJECT-X</h2></header>
+      <article class="card repository"><header class="repo-head"><div><h3><span>OSDC</span> / PROJECT-X</h3><p>Experimental open-source project maintained by the OSDC development team.</p></div><span class="badge verified">PUBLIC</span></header><div class="repo-content"><section class="file-panel"><h4>FILE TREE</h4><ul class="tree"><li>📁 src/</li><li>　📄 main.py</li><li>　📄 database.py</li><li>　📄 routes.py</li><li>📄 README.md</li><li>📄 index.html</li><li>📄 style.css</li><li>📄 config.json</li><li>📄 package.json</li></ul></section><section class="commit-panel"><h4>COMMIT HISTORY</h4><div class="table-wrap"><table><thead><tr><th>Commit</th><th>Author</th><th>Message</th><th>Time</th></tr></thead><tbody><tr><td><code>a71f9c2</code></td><td>Alex</td><td>Update README</td><td>01:42</td></tr><tr><td><code>b92d421</code></td><td>Riya</td><td>Fix API</td><td>01:58</td></tr><tr><td><code>c73aa81</code></td><td>Kabir</td><td>Deployment fix</td><td>02:07</td></tr><tr class="unknown"><td><code>???????</code></td><td>UNKNOWN</td><td>cleanup</td><td>02:13</td></tr></tbody></table></div></section></div></article>
+      <div class="repo-details"><article class="card mini-panel"><h4>DELETED FILES</h4><ul class="deleted"><li>config.json</li><li>database.py</li><li>README.md</li></ul></article><article class="card mini-panel"><h4>REPOSITORY PERMISSIONS</h4><table><tbody><tr><td>Alex</td><td>READ</td></tr><tr><td>Riya</td><td>WRITE</td></tr><tr><td>Kabir</td><td>ADMIN</td></tr><tr><td>Sam</td><td>WRITE</td></tr></tbody></table></article></div>
+    </section>
+
+    <section id="evidence" class="section container" aria-labelledby="evidence-title"><header class="section-header"><p class="eyebrow">COLLECTED MATERIAL / 06 ITEMS</p><h2 id="evidence-title">EVIDENCE ROOM</h2><p>Each item is retained for review and marked by its current verification status.</p></header><div class="evidence-grid"><article class="card evidence-card"><h5>EVIDENCE #01</h5><h3>Commit Log</h3><p>Unknown commit recorded at <mark>02:13 AM</mark>.</p><footer><time datetime="02:13">02:13 AM</time><span class="badge verified">VERIFIED</span></footer></article><article class="card evidence-card"><h5>EVIDENCE #02</h5><h3>Server Log</h3><p>New device authentication detected shortly before the suspicious commit.</p><footer><time datetime="02:10">02:10 AM</time><span class="badge classified">CLASSIFIED</span></footer></article><article class="card evidence-card"><h5>EVIDENCE #03</h5><h3>Chat Log</h3><p>A message was sent at 01:51 AM: <em>“Are you still working on the repository?”</em></p><footer><time datetime="01:51">01:51 AM</time><span class="badge verified">VERIFIED</span></footer></article><article class="card evidence-card"><h5>EVIDENCE #04</h5><h3>Repository Permissions</h3><p>Four users had access to the project, with different access levels.</p><footer><time datetime="02:17">02:17 AM</time><span class="badge verified">VERIFIED</span></footer></article><article class="card evidence-card"><h5>EVIDENCE #05</h5><h3>Deleted Files</h3><p>Three files were removed during the incident.</p><footer><time datetime="02:15">02:15 AM</time><span class="badge classified">CLASSIFIED</span></footer></article><article class="card evidence-card"><h5>EVIDENCE #06</h5><h3>Access Record</h3><p>Multiple repository activities occurred between 01:40 AM and 02:15 AM.</p><footer><time datetime="01:40">01:40 AM</time><span class="badge verified">VERIFIED</span></footer></article></div></section>
+
+    <section id="terminal" class="section container" aria-labelledby="terminal-title"><header class="section-header"><p class="eyebrow">READ-ONLY LOG RECONSTRUCTION</p><h2 id="terminal-title">TERMINAL // SYSTEM LOG</h2></header><article class="terminal"><header>● ● ● <span>OSDC TERMINAL v1.0</span></header><pre><code><strong>$ git log</strong>
+commit a71f9c2
+Author: alex
+Message: Update README
+Time: 01:42
+
+commit b92d421
+Author: riya
+Message: Fix API
+Time: 01:58
+
+commit c73aa81
+Author: kabir
+Message: Deployment fix
+Time: 02:07
+
+commit ???????
+Author: UNKNOWN
+Message: cleanup
+Time: 02:13
+
+<strong>$ git status</strong>
+DELETED:
+  config.json
+  database.py
+  README.md
+
+STATUS:
+  Repository LOCKED</code></pre></article><p class="reconstruction"><small>This terminal is a fictional, reconstructed representation of the available logs.</small></p></section>
+
+    <section id="clues" class="section container" aria-labelledby="clues-title"><header class="section-header"><p class="eyebrow">CORRELATION WALL / NO CONCLUSIONS</p><h2 id="clues-title">CLUE BOARD</h2></header><div class="clue-board"><article class="card clue"><h6>CLUE #01</h6><p>Suspicious commit occurred at 02:13 AM.</p></article><article class="card clue"><h6>CLUE #02</h6><p>Three files were deleted.</p></article><article class="card clue"><h6>CLUE #03</h6><p>The commit author is unknown.</p></article><article class="card clue"><h6>CLUE #04</h6><p>Multiple developers were active before the incident.</p></article><article class="card clue"><h6>CLUE #05</h6><p>Repository permissions differed between members.</p></article><article class="card clue"><h6>CLUE #06</h6><p>A new device appeared in the authentication logs.</p></article></div></section>
+
+    <section id="investigation" class="section container" aria-labelledby="investigation-title"><header class="section-header"><p class="eyebrow">INVESTIGATOR SUBMISSION / CASE OSDC-001</p><h2 id="investigation-title">FINAL INVESTIGATION</h2><p>Record your interpretation. This static form is ready for future interaction but does not submit data.</p></header><form class="card investigation-form" action="#investigation" method="get"><div class="form-row"><label for="suspect">Suspect</label><select id="suspect" name="suspect"><option value="">Select a person or outcome</option><option>Alex Sharma</option><option>Riya Mehta</option><option>Kabir Verma</option><option>Sam Kapoor</option><option>Unknown / External</option></select></div><fieldset><legend>Evidence reviewed</legend><div class="choices"><label><input type="checkbox" name="evidence" value="commit"> Commit Log</label><label><input type="checkbox" name="evidence" value="server"> Server Log</label><label><input type="checkbox" name="evidence" value="chat"> Chat Log</label><label><input type="checkbox" name="evidence" value="permissions"> Repository Permissions</label><label><input type="checkbox" name="evidence" value="files"> Deleted Files</label><label><input type="checkbox" name="evidence" value="access"> Access Records</label></div></fieldset><fieldset><legend>Confidence</legend><div class="choices"><label><input type="radio" name="confidence" value="low"> Low</label><label><input type="radio" name="confidence" value="medium"> Medium</label><label><input type="radio" name="confidence" value="high"> High</label></div></fieldset><div class="form-row"><label for="support">Evidence supporting conclusion</label><textarea id="support" name="support" placeholder="Reference the logs, access records, or repository history..."></textarea></div><div class="form-row"><label for="conclusion">What do you think happened?</label><textarea id="conclusion" name="conclusion" placeholder="Write your reconstruction of the incident..."></textarea></div><button class="button" type="submit">SUBMIT INVESTIGATION</button></form></section>
+  </main>
+  <footer class="site-footer"><div class="container"><strong>OSDC Mystery Room</strong><span>Case #001 — The Missing Commit</span><span>“Fictional investigation experience”</span></div></footer>
+</body>
+</html>
